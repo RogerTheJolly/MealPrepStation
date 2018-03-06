@@ -119,12 +119,18 @@
         $("#wrapper").toggleClass("toggled");
     });
 	
-	var windowsize = $(window).width();
+	var windowsize = $(window).width() + 17;
+	
+	  if (windowsize < 768) {
+		$("#wrapper").removeClass("toggled");
+	  }
+	  else if(windowsize >= 768){
+	  $("#wrapper").addClass ("toggled");
+	  }
 	
 	$(window).resize(function() 
 	{
 	  windowsize = $(window).width() + 17;
-	  console.log(windowsize);
 	  if (windowsize < 768) {
 		$("#wrapper").removeClass("toggled");
 	  }

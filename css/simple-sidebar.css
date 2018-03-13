@@ -40,7 +40,7 @@ body {
 	Border-bottom: 3px solid #444;
 	//background-image: url(../images/search.png);
 	//background-repeat: no-repeat;
-	width: 75px;
+	width: 250px;
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	transition: all .5s ease;
@@ -227,6 +227,9 @@ body {
 @media(min-width:768px) {
 	#topBar span{
 		display: inline-block;
+	}
+	#searchBar{
+		width: 75px;
 	}
 	#contentTable td, #contentTable th{
 		display: table-cell;
